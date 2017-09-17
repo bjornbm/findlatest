@@ -1,0 +1,28 @@
+name:                findlatest
+version:             0.1.0.0
+synopsis:            List the latest versions of files with the same name in a directory.
+-- description:
+homepage:            https://github.com/bjornbm/findlatest#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Bjorn Buckwalter
+maintainer:          bjorn@buckwalter.se
+copyright:           Copyright: (c) 2017 Bjorn Buckwalter
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+executable findlatest
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , directory
+                     , filemanip
+                     , filepath
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/bjornbm/findlatest
