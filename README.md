@@ -11,7 +11,7 @@ into `xargs -0`.  For example:
     findlatest .stack hs | xargs -0 -n 1 echo
 
 
-# TODO
+## TODO
 
 This tool is very rudimentary and solves one specific problem.
 Opportunities to generalize include:
